@@ -19,9 +19,11 @@ body {
 
 }
 
-#tabContent h2 {
-    font-family: 'Raleway', sans-serif;
+#tabContent h2,h3,h4 {
+    font-family: 'Raleway', sans-serif !important;
 }
+
+
 
 #tabContent p,li {
     font-family: 'Quicksand', sans-serif;
