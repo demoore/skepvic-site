@@ -25,7 +25,7 @@ body {
 
 
 
-#tabContent p,li {
+#tabContent p,li,dt,dl {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -49,10 +49,12 @@ body {
 .footer {
     height: 50px;
 }
+
 #footerContent{
     color:#EEE;
     padding-top:15px;
     border-top: 1px solid #e5e5e5;
     font-family: 'Quicksand', sans-serif;
 }
+
 
