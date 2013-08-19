@@ -6,7 +6,7 @@ body {
 }
 
 .nav li {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
 }
 
@@ -20,13 +20,13 @@ body {
 }
 
 #tabContent h2,h3,h4 {
-    font-family: 'Raleway', sans-serif !important;
+    font-family: 'Quicksand', sans-serif !important;
 }
 
 
 
 #tabContent p,li,dt,dl {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.1em;
 }
 
