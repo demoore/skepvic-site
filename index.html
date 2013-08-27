@@ -45,7 +45,8 @@
         The environment we aim to create is one in which people feel comfortable asking questions when they are unsure
         of whether or not they should accept a position, claim, or belief. Everyone is wrong sometimes and our goal is
         not to mock people for making mistakes or being fooled into believing silly things. That said, as skeptics, we
-        also don't pretend to validate bogus claims in order to spare people's feelings. If a topic is being discussed by
+        also don't pretend to validate bogus claims in order to spare people's feelings. If a topic is being discussed
+        by
         the group, it will be discussed openly and honestly. This will sometimes mean listening views that may oppose
         your own. Sometimes these discussions may even get pretty heated. We see this as a good thing. Skepticism is
         about changing your mind when good evidence is shown and a good skeptic knows when to admit they were wrong.
@@ -101,13 +102,16 @@
 
 <div id="contact" class="tab-pane fade">
     <h2>Find Us</h2>
+    <dl class="dl-horizontal">
+        <dt id="me"></dt>
+        <dd id="em"></dd>
 
-    <p>What to join or reach us? Look here:</p>
-    <ul class="list-unstyled">
-        <li>Future facebook link here</li>
-        <li>Official Email address here</li>
-        <li>Maybe a blog here</li>
-    </ul>
+        <dt>View our blog here:</dt>
+        <dd><a href="http://blog.skepvic.ca">blog.skepvic.ca</a></dd>
+
+        <dt>Future Facebook:</dt>
+        <dd>Link Here</dd>
+    </dl>
 </div>
 
 <div id="constitution" class="tab-pane fade">
@@ -298,7 +302,9 @@
 <div id="events" class="tab-pane fade">
     <h2>Events</h2>
 
-    <p>Stuff scraped from the blog shall be put here</p>
+    <div id="divRss">
+
+    </div>
 </div>
 </div>
 </div>
@@ -314,5 +320,23 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/FeedEk.js"></script>
+<script type="text/javascript">
+    $('#divRss').FeedEk({
+        FeedUrl: 'http://blog.skepvic.ca/category/events/feed',
+        MaxCount: 5,
+        ShowDesc: true,
+        DescCharacterLimit: 100,
+        TitleLinkTarget: '_blank'
+    });
+
+    var m = 'Email us at: '
+
+    var e = 'cgalitz';
+    e += '@';
+    e += 'skepvic.ca';
+    $("#me").append(m);
+    $("#em").append(e);
+</script>
 </body>
 </html>
