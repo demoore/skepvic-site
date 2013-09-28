@@ -60,9 +60,14 @@ body {
 
 
 
-.navbar-brand {
+#brand {
     font-family: 'Raleway', sans-serif;
     font-weight: 100;
     font-size: 1.5em !important;
     font-style: italic;
+}
+
+.mobile-link-list{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
